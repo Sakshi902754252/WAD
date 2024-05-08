@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node JS</title>
+</head>
+<body>
+    <style>
+        #navbar {
+            display: flex;
+            position: relative;
+        }
+    
+        #logo img {
+            width: 150px;
+            height: 103px;
+        }
+    
+        #navbar ul {
+            display: flex;
+    
+        }
+    
+        #navbar ul li {
+            list-style: none;
+            padding: 30px;
+    
+        }
+    
+        #navbar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 23px;
+    
+        }
+    
+        #navbar ul li a:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition-property: background-color;
+            transition-duration: 1s;
+    
+        }
+    
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 87%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+    
+        }
+    
+        #home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 628px;
+        }
+    
+        #home::before {
+            content: "";
+            background: url('foodimg/spaghetti-1932466.jpg') no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.85;
+    
+        }
+    
+        #home h1 {
+            text-align: center;
+            color: aliceblue;
+        }
+    
+        #h-primary {
+            font-size: 2.8rem;
+            padding: 53px;
+        }
+    
+        #home p {
+            font-size: 20px;
+            color: aliceblue;
+        }
+    
+        .btn {
+            border-radius: 7px;
+            padding: 8px;
+        }
+    
+        .btn:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition-property: background-color;
+            transition-duration: 1s;
+        }
+    
+        #services {
+            margin: 34px;
+            display: flex;
+        }
+    
+        #services .box {
+            border: 2px solid red;
+            padding: 4px;
+            margin: 40px;
+            border-radius: 23px;
+    
+        }
+    
+    
+        .center {
+            text-align: center;
+        }
+    
+        #services .box img {
+            height: 160px;
+            margin: auto;
+            display: block;
+    
+        }
+    
+    
+        .h-primary-center {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+    
+    
+        #clients {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+        }
+    
+        .client-item img {
+            height: 162px;
+            padding: 13px;
+        }
+    
+        #client-section::before {
+        content: "";
+        position: absolute;
+        background: url('foodimg/mediterranean-cuisine-2378758.jpg');
+        height: 35%;
+        width: 100%;
+        opacity: 0.8;
+        z-index: -1;
+        }
+        #contact-box{
+       
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        #contact-box textarea{
+            width: 100%;
+            padding: 0.5rem;
+        }
+    </style>
+    
+    <body>
+        <div id="navbar">
+            <div id="logo">
+                <img src="foodimg/logo.jpg" alt="KHALLO.COM">
+            </div>
+            <ul>
+                <li class="item"><a href="">HOME</a></li>
+                <li class="item"><a href="">SERVICES</a></li>
+                <li class="item"><a href="">ABOUT US</a></li>
+                <li class="item"><a href="">CONTACT US</a></li>
+            </ul>
+    
+        </div>
+        <section id="home">
+            <h1 id="h-primary">GET THE TASTIEST MEAL IN 30 MINUTES !!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis consectetur dolore dolorum
+                nostrum assumenda nulla </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis consectetur dolore dolorum
+                nostrum assumenda nulla </p>
+            <button class="btn">ORDER NOW</button>
+        </section>
+    
+        <section class="services-center">
+            <h1 class="h-primary-center">OUR SERVICES</h1>
+            <div id="services">
+                <div class="box">
+                    <img src="foodimg/food-3024849__340.webp" alt="pizza">
+                    <h2 class="h-secondary center">FOOD ORDERING</h2>
+                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ab? Molestiae,
+                        doloribus earum, quae
+                        obcaecati dolor inventore voluptas, quasi quis ea culpa aliquid iusto similique impedit. Aliquam
+                        cupiditate earum error fuga necessitatibus labore reiciendis.</p>
+    
+                </div>
+                <div class="box">
+                    <img src="foodimg/breakfast-932925.jpg" alt="breakfast">
+                    <h2 class="h-secondary center">FOOD CATERING</h2>
+                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ab? Molestiae,
+                        doloribus earum, quae
+                        obcaecati dolor inventore voluptas, quasi quis ea culpa aliquid iusto similique impedit. Aliquam
+                        cupiditate earum error fuga necessitatibus labore reiciendis.</p>
+    
+                </div>
+                <div class="box">
+                    <img src="foodimg/food-delivery-5217579_1280.png" alt="delivery">
+                    <h2 class="h-secondary center">BULK ORDERING</h2>
+                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ab? Molestiae,
+                        doloribus earum, quae
+                        obcaecati dolor inventore voluptas, quasi quis ea culpa aliquid iusto similique impedit. Aliquam
+                        cupiditate earum error fuga necessitatibus labore reiciendis.</p>
+    
+                </div>
+        </section>
+    
+        <section id="client-section">
+            <h1 class="h-primary-center">OUR CLIENTS</h1>
+            <div id="clients">
+                <div class="client-item">
+                    <img src="foodimg/apple-3384010_1280.png" alt="apple">
+                </div>
+                <div class="client-item">
+                    <img src="foodimg/facebook-667456_1920.png" alt="facebook">
+                </div>
+                <div class="client-item">
+                    <img src="foodimg/spotify-3384019_1280.png" alt="spotify">
+                </div>
+                <div class="client-item">
+                    <img src="foodimg/twitter-312464_1280.png" alt="twitter">
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1 class="h-primary-center">
+                CONTACT US 
+            </h1>
+            <div id="contact-box">
+                <form action="">
+                    <div class="form-group">
+                       <label for="name">NAME :</label>
+                       <input type="text" name="name" id="name" placeholder="ENTER YOUR NAME ">
+                    </div>
+                    <div class="form-group"
+                       <label for="email">EMAIL:</label>
+                       <input type="email" name="name" id="name" placeholder="ENTER YOUR EMAIL ID ">
+                    </div>
+                    <div class="form-group">
+                       <label for="name">NUMBER :</label>
+                       <input type="phone" name="name" id="name" placeholder="ENTER YOUR NUMBER ">
+                    </div>
+                    <div class="form-group">
+                       <label for="name">ADDRESS :</label>
+                       <input type="text" name="name" id="name" placeholder="ENTER YOUR ADDRESS ">
+                    </div>
+    
+                </form>
+            </div>
+        </section>
+    
+    </body>
+</html>
